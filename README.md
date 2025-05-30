@@ -93,9 +93,11 @@ Authorization: Bearer <access_token>
 ---
 
 ## Testing the API
-1. Authenticate via `/auth/login/` in your browser.
-2. After login, your access token is stored in the database (see Django admin > User social auths).
+1. Authenticate via `http://127.0.0.1:8000/auth/login/` in your browser.
+2. After login, your access token is stored in the database (see Django admin > User social auths)`http://127.0.0.1:8000/admin/`  in your browser.
 3. Use the access token as a Bearer token in your API requests (e.g., with Postman or curl).
+
+---
 
 ---
 
@@ -122,17 +124,5 @@ ywork_oms/
 
 ---
 
-## Security Notes
-- **Never commit your `.env` file or secrets to version control.**
-- All API endpoints are protected and require a valid Google OAuth token.
-- Tokens are stored securely and can be managed via the Django admin.
 
 ---
-
-## License
-MIT
-
----
-
-## Contact
-For questions or support, contact the Ywork.ai team. 
